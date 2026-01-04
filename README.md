@@ -38,9 +38,23 @@ freelancer/
 ├── css/                    # Estilos
 ├── js/                     # Scripts
 ├── img/                    # Imágenes
+├── practicas/              # Prácticas extras
+├── notas/                  # Mis apuntes diarios
 ├── screenshots/            # Capturas futuras
 └── .gitignore
 
+
+## 🧪 Prácticas extras
+
+Además de seguir el curso paso a paso, estoy practicando conceptos clave por mi cuenta para reforzar el aprendizaje.
+
+Carpetas con ejercicios prácticos:
+
+- **[Prácticas de formularios HTML](./practicas/formularios/)**
+  - 4 formularios diferentes: contacto básico, registro de usuario, login y encuesta
+  - Práctica con tipos de input, radio, checkbox, select, textarea, etc.
+
+¡Más prácticas irán llegando conforme avance (CSS, JavaScript, PHP...)! 🚀
 
 ## 📸 Capturas (próximamente)
 <!-- Se añadirán cuando aplique CSS -->
