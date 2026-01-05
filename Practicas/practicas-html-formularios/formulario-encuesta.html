@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta</title>
+</head>
+<body>
+    <section>
+        <h1>Encuesta de Satisfacción</h1>
+        <fieldset>
+            <legend>Encuesta</legend>
+            <div>
+                <label for="pregunta1">¿Qué tecnologías te interesan?</label>
+                <input type="checkbox" name="lenguaje" id="html" value="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="lenguaje" id="css" value="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="lenguaje" id="js" value="js">
+                <label for="js">JavaScript</label>
+
+                <input type="checkbox" name="lenguaje" id="php" value="php">
+                <label for="php">PHP</label>
+            </div>
+            <div>
+                <label for="edad" >¿Cuántos años tienes?</label>
+                    <input type="number" name="edad" id="edad" placeholder="Edad">
+            </div>
+            <div>
+                <label for="pregunta2" >¿Del 1 al 10, cómo calificas tu conocimiento actual?</label>
+                    <input type="number" name="pregunta2" id="pregunta2" placeholder="calificacion">
+            </div>
+            <div>
+                <label for="comentario" >Comentarios</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </fieldset>
+    </section>
+</body>
+</html>
