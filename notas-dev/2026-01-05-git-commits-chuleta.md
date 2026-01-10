@@ -52,3 +52,66 @@ Estándar usado en casi todas las empresas en 2026
 
 ¡Guarda esta chuleta y úsala en cada commit!
 Con esto tu repo Freelancer ya se ve como el de un dev junior serio 💼
+
+# Git Commit Guide (Concisa)
+
+## Regla básica
+
+* Inglés
+* Presente
+* Mensaje corto y claro
+* Un cambio por commit
+
+**Formato**
+
+```
+type: verb + change
+```
+
+---
+
+## Types esenciales
+
+* **feat** → nueva funcionalidad
+* **fix** → corrección de bugs
+* **style** → CSS, fuentes, UI
+* **refactor** → mejora interna sin cambiar comportamiento
+* **docs** → documentación
+* **chore** → configuración / tareas menores
+
+---
+
+## Verbos más usados
+
+`add` · `update` · `fix` · `remove` · `improve` · `refactor` · `implement`
+
+---
+
+## Commits más comunes
+
+```
+feat: add contact form
+fix: prevent empty form submission
+style: add Google Font
+style: improve responsive layout
+refactor: simplify form validation
+docs: update README
+chore: configure ESLint
+```
+
+---
+
+## Comando
+
+```
+git commit -m "style: add Google Font"
+```
+
+---
+
+## Regla final
+
+> Menos palabras, más claridad
+
+Simple > creativo
+Claro > elegante
