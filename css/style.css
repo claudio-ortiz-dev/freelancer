@@ -110,13 +110,13 @@ h1,h2,h3{
 ============================ */
 .hero-icono {
     font-size: 7.5rem;
-    color: var(--primario);
+    color: var(--secundario);
     margin-right: .5rem;
 }
 .servicio-icono {
     font-size: 4rem;
-    color: var(--primario);
-    display: block;
+    color: var(--secundario);
+    
     text-align: center;
     margin: 1.5rem 0;
 }
@@ -125,7 +125,8 @@ h1,h2,h3{
     transition: transform .3s ease, color .3s ease;
 }
 
-.servicio-icono, .hero-icono:hover {
-    color: var(--secundario);
+.servicio-icono:hover,
+.hero-icono:hover {
+    color: var(--primario);
     transform: scale(1.5);
 }
