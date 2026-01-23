@@ -1,3 +1,6 @@
+/* ============================
+    VARIABLES GLOBALES
+============================ */
 :root{
     --blanco: #ffffff;
     --oscuro: #212121;
@@ -5,7 +8,9 @@
     --secundario: #0097a7;
     --gris: #757575;
 }
-
+/* ============================
+    RESET Y CONFICURACION BASE
+============================ */
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -13,23 +18,39 @@ html{
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+/* ============================
+    TIPOGRAFIA
+============================ */
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif;
 }
-.titulo {
-    text-align: center;
+h1{
     font-size: 3.8rem;
 }
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
 .titulo span {
     font-size: 2rem;
 }
-
+/* ============================
+    LAYOUT GENERAL
+============================ */
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
+/* ============================
+    NAVEGACION
+============================ */
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -58,7 +79,9 @@ body{
     color: var(--oscuro);
 
 }
-
+/* ============================
+    HERO
+============================ */
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -66,11 +89,43 @@ body{
     height: 450px;
     position: relative; /* ¡Importante! El padre debe ser relative */
 }
-.contenido-hero{
+.contenido-hero {
     position: absolute;
     background-color: rgba(0, 0, 0, .07); /** Anterior **/
     background-color: rgb(0 0 0 / 70%);
     width: 100%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+/* ============================
+    ICONOS
+============================ */
+.hero-icono {
+    font-size: 7.5rem;
+    color: var(--primario);
+    margin-right: .5rem;
+}
+.servicio-icono {
+    font-size: 4rem;
+    color: var(--primario);
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.servicio-icono,
+.hero-icono {
+    transition: transform .3s ease, color .3s ease;
 }
 
+.servicio-icono, .hero-icono:hover {
+    color: var(--secundario);
+    transform: scale(1.5);
+}
