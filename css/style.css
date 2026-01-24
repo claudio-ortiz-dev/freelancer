@@ -48,6 +48,32 @@ h1,h2,h3{
     max-width: 120rem;
     margin: 0 auto;
 }
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .8rem;
+    width: 90%;
+    text-align: center;
+}
+@media (min-width: 768px) {
+   .boton{
+    width: auto;
+   }
+}
+.boton {
+    transition: transform .3s ease, color .3s ease;
+}
+.boton:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+    transform: scale(1.1);
+}
 /* ============================
     NAVEGACION
 ============================ */
