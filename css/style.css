@@ -76,6 +76,14 @@ h1,h2,h3{
     color: var(--oscuro);
     transform: scale(1.1);
 }
+.sombra {
+    box-shadow: 0px 5px 16px 0px rgba(79,79,79,0.37);
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(79,79,79,0.37);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(79,79,79,0.37);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
 /* ============================
     NAVEGACION
 ============================ */
@@ -116,6 +124,7 @@ h1,h2,h3{
     background-size: cover;
     height: 450px;
     position: relative; /* ¡Importante! El padre debe ser relative */
+    margin-bottom: 2rem;
 }
 .contenido-hero {
     position: absolute;
@@ -156,4 +165,13 @@ h1,h2,h3{
 .hero-icono:hover {
     color: var(--primario);
     transform: scale(1.5);
+}
+/* ============================
+    servicios
+============================ */
+@media (min-width: 768px) {
+   .servicios {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 }
